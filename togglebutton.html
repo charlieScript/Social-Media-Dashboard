@@ -47,7 +47,11 @@
 
         /* when the button is clicked */
         input:checked + .slider {
-            background-color: #2196f3;
+            background-color: black;
+        }
+
+        input:checked + .slider::before {
+            background-color: red;
         }
 
         input:focus + .slider {
