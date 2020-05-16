@@ -32,7 +32,7 @@ header {
     left: 0;
     top: 0;
     width: 100%;
-    height: 17%;
+    height: 30%;
     z-index: -1;
 } 
 
@@ -120,9 +120,12 @@ input:checked + .slider::before {
 
 .card-grid-1 {
     display: grid;
-    padding: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    margin: 0;
 }
 
 .card-grid-1 .cards {
@@ -133,6 +136,7 @@ input:checked + .slider::before {
     align-items: center;
     background-color: hsl(228, 28%, 20%);
     border-radius: 5px;
+    margin-bottom: 2rem;
 }
 
 .card-grid-1 .cards .card-logo {
@@ -221,3 +225,43 @@ input:checked + .slider::before {
     border-top-right-radius: 50px;
 }
 
+.overview {
+    color: white;
+    padding-left: 2rem;
+}
+
+.card-grid-2 {
+    display: grid;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-right: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card-grid-2 .cards {
+    padding: 1.5rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(228, 28%, 20%);
+    border-radius: 5px;
+}
+
+.card-grid-2 .cards .top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-grid-2 .cards .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.card-grid-2 .cards .bottom div * {
+    display: inline-block;
+    vertical-align: middle;
+}
