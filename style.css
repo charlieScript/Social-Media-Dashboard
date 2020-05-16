@@ -39,6 +39,15 @@ header .logo p{
     color: hsl(228, 34%, 66%);
 }
 
+.toggle {
+    display: flex;
+    align-items: center;
+}
+
+.toggle p {
+    margin-right: 1rem;
+}
+
 /* toggle button */
  /* box around the swich */
  .switch {
@@ -106,4 +115,10 @@ input:checked + .slider::before {
 
 .slider.round::before {
     border-radius: 50%;
+}
+
+.card-grid-1 {
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: repeat(4, 1fr);
 }
