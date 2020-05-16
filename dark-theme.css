@@ -139,6 +139,11 @@ input:checked + .slider::before {
     margin-bottom: 2rem;
 }
 
+.card-grid-1 .cards:hover {
+    cursor: pointer;
+    background-color: hsl(228, 17%, 45%);
+}
+
 .card-grid-1 .cards .card-logo {
     display: flex;
     margin-bottom: 1rem;
@@ -247,6 +252,11 @@ input:checked + .slider::before {
     flex-direction: column;
     background-color: hsl(228, 28%, 20%);
     border-radius: 5px;
+}
+
+.card-grid-2 .cards:hover {
+    cursor: pointer;
+    background-color: hsl(228, 17%, 45%);
 }
 
 .card-grid-2 .cards .top {
